@@ -1,0 +1,36 @@
+/* JAI SHREE RAM */
+
+.loadingBorder{
+    padding: 10px;
+    background: red;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.a{
+    display: none;
+}
+
+.loadingBorder::after {
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    /* z-index: -1; */
+    padding: 3px;
+    background: conic-gradient(
+        from 0deg,
+        #ff5f6d,
+        #ffc371,
+        #ffd700,
+        #32cd32,
+        #00fa9a,
+        #1e90ff,
+        #9370db,
+        #ff5f6d
+    );
+    border-radius: 10px;
+}
