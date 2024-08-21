@@ -1,28 +1,21 @@
 /* JAI SHREE RAM */
 
-.loadingBorder{
-    padding: 10px;
-    background: red;
-    margin: 30px;
-    border-radius: 10px;
+:root{
+    --direction: 0deg;
 }
 
-.a{
-    display: none;
-}
-
-.loadingBorder::after {
+.wrapper::after {
     content: '';
-    width: 120%;
-    height: 120%;
+    width: 1000%;
+    height: 1000%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
-    /* z-index: -1; */
-    padding: 3px;
+    z-index: -1;
+    /* padding: 3px; */
     background: conic-gradient(
-        from 0deg,
+        from 0deg, 
         #ff5f6d,
         #ffc371,
         #ffd700,
@@ -33,4 +26,18 @@
         #ff5f6d
     );
     border-radius: 10px;
+    animation: rotateFull 2s linear infinite;
+}
+
+.wrapper::before{
+    filter: blur(60px);
+}
+
+@keyframes rotateFull {
+    0%{
+        transform: translate(-50% , -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50% , -50%) rotate(360deg);
+    }
 }
