@@ -41,3 +41,27 @@
         transform: translate(-50% , -50%) rotate(360deg);
     }
 }
+
+.lMain::before{
+    content: '';
+    width: 101%;
+    height: 101%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: conic-gradient(
+        from 0deg, 
+        #fff , 
+        transparent 1%
+    );
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.lMain::after{
+    filter: blur(20px);
+}
+
+.loadingPercent{
+    text-shadow: 0 0 60px #EAFF00 ;
+}
