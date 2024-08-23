@@ -1,13 +1,13 @@
 // JAI SHREE RAM
 
 import React from 'react'
-import Loader from './components/Loader'
+import Test from './components/Test'
 
 function App() {
   return (
     <>
   
-    <Loader></Loader>
+    <Test></Test>
     
     
     </>
